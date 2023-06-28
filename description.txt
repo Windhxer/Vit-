@@ -3,3 +3,8 @@
 目前计划：
 1.学习Transformer相关基础知识
 2.进行Transformer demo实现
+3.待学习列表：
+-Transformer: https://arxiv.org/abs/1706.03762
+-ViT: https://arxiv.org/abs/2010.11929
+-BERT: https://arxiv.org/abs/1810.04805
+-GPT系列
