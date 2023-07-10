@@ -95,3 +95,9 @@ Decoder也是N=6层，每层包括3个sub-layers：
 1. 这样可以直接计算embedding而不需要训练，减少了训练参数
 2. 这样允许模型将position embedding扩展到超过了training set中最长position的position，例如测试集中出现了更大的position，sin position embedding依然可以给出结果，但不存在训练到的embedding。
 
+3.8 残差连接+layer normalization
+
+残差连接即为对差值进行函数计算与训练。没看懂RNN那里的论文，总之就是很有效。
+
+layer normalization即为针对每个样本进行归一化，而不是针对batch进行归一化。
+
