@@ -8,3 +8,6 @@
 -ViT: https://arxiv.org/abs/2010.11929
 -BERT: https://arxiv.org/abs/1810.04805
 -GPT系列
+
+7.10
+transformer原理貌似懂了，具体代码脑测跑不通，辐射出来的实现细节好多
