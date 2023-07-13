@@ -34,7 +34,7 @@ class ScaledDotProductAttention(nn.Module):
         super(ScaledDotProductAttention, self).__init__()
 
     def forward(self, Q, K, V, attn_mask):
-        ## 输入进来的维度分别是 [batch_size x n_heads x len_q x d_k]  K： [batch_size x n_heads x len_k x d_k]  V: [batch_size x n_heads x len_k x d_v]
+        ## 输入进来的维度分别是 Q：[batch_size x n_heads x len_q x d_k]  K： [batch_size x n_heads x len_k x d_k]  V: [batch_size x n_heads x len_k x d_v]
         ##首先经过matmul函数得到的scores形状是 : [batch_size x n_heads x len_q x len_k]
         scores = torch.matmul(Q, K.transpose(-1, -2)) / np.sqrt(d_k)
 
