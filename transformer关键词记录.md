@@ -101,3 +101,8 @@ Decoder也是N=6层，每层包括3个sub-layers：
 
 layer normalization即为针对每个样本进行归一化，而不是针对batch进行归一化。
 
+#### 残差有效的原因
+
+![image-20230714123713658](C:\Users\23850\AppData\Roaming\Typora\typora-user-images\image-20230714123713658.png)
+
+即使乘式为0，也不会发生梯度消失。缓解了梯度消失之后就可以进行更深的机器学习。
